@@ -7,8 +7,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Hello World
-          command: echo "Tynesha is working in CircleCI!"
+          name: Root Config Test
+          command: echo "Tynesha root CircleCI config is working"
 
 workflows:
   test-workflow:
