@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Hello World
-          command: echo "Hello from CircleCI!"
+          command: echo "Tynesha is working in CircleCI!"
 
 workflows:
   test-workflow:
