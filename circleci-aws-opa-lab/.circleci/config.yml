@@ -103,7 +103,7 @@ jobs:
       - run:
           name: Configure OIDC and Test
           command: |
-            export AWS_ROLE_ARN="arn:aws:iam::123456789012:role/CircleCILabRole"
+            export AWS_ROLE_ARN="arn:aws:iam::596055752523:role/CircleCILabRole"
             export AWS_WEB_IDENTITY_TOKEN_FILE="/tmp/web-identity-token"
             echo "$CIRCLE_OIDC_TOKEN" > "$AWS_WEB_IDENTITY_TOKEN_FILE"
 
