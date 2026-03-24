@@ -19,15 +19,15 @@ jobs:
             sudo apt-get update
             sudo apt-get install -y jq
 
-      - run:
+         - run:
           name: Test OPA Policies
           command: |
             echo "Running OPA policy tests..."
-            if [ -d "tests/" ]; then
-              opa test policies/ tests/
-            else
-              echo "No tests directory found, skipping policy tests"
-            fi
+            pwd
+            ls -la
+            ls -la policies
+            ls -la tests
+            opa test policies/ tests/
             echo "Policy tests completed successfully!"
 
       - run:
