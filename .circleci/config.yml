@@ -18,8 +18,7 @@ jobs:
             # Install jq for JSON processing
             sudo apt-get update
             sudo apt-get install -y jq
-
-         - run:
+      - run:
           name: Test OPA Policies
           command: |
             echo "Running OPA policy tests..."
